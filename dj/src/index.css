@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  background-color: black;
+  font-family: "Josefin Sans";
+}
+
+
+
+.header{
+  position: sticky;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  padding: 10px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.mainLogo{
+  width: 12.5%;
+  opacity: 1;
+}
+
+
+.firstPhotos{
+  margin-top: -2.5%;
+  text-align: center;
+}
+
+
+.djPhotos{
+  width: 90%;
+  object-fit: cover;
+  /*lewa gora, prawy gora, prawy dol, lewy dol*/
+  clip-path: polygon(10% 5%, 100% 5%, 80% 95%, 0% 95%);
+}
+
+.pricesDiv{
+  margin-left: 15%;
+  color: white;
+}
+.offers{
+  font-size: clamp(30px, 2vw, 60px);
+  margin-top: 10%;
+  
+}
+
+.p-offers{
+  font-size: clamp(15px, 2vw, 40px);
+  margin-top: 1%;
+  max-width: 60%;
+}
+
+.priceBtn{
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  border-color: white;
+  border-radius: 15px;
+  color: white;
+  font-family: "Josefin Sans";
+  padding: clamp(10px, 2vw, 30px);
+  font-size: clamp(11px, 2vw, 35px);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.priceBtn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gray; /* kolor wjeżdżającego tła */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.priceBtn:hover::before{
+  transform: translateX(0);
+}
