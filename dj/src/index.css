@@ -135,3 +135,16 @@ body{
   width: 50%;
   border-radius: 15px;
 }
+
+.Spotify{
+  margin-top: 10%;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.Spotify h1{
+  font-size: clamp(24px, 2vw, 40px);
+  color: white;
+}

@@ -1,5 +1,6 @@
 import DJ1 from "./assets/dj1.jpg"
 import ProfPic from "./assets/profpic.png"
+import Spotify from "./Spotify";
 import { Link } from "react-router-dom";
 
 function Body(){
@@ -35,6 +36,11 @@ function Body(){
                 <div className="profpic">
                     <img src={ProfPic} alt="profile picture" />
                 </div>
+            </div>
+
+            <div className="Spotify">
+                <h1>Check out my latest song!</h1>    
+                <Spotify/>
             </div>
             
         </div>
