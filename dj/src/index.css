@@ -23,32 +23,52 @@ body{
 
 
 .firstPhotos{
-  margin-top: -2.5%;
-  text-align: center;
-}
-
-
-.djPhotos{
+  position: relative;
+  margin: -2.5% auto 0;
   width: 90%;
-  object-fit: cover;
-  /*lewa gora, prawy gora, prawy dol, lewy dol*/
+  display: block;
   clip-path: polygon(10% 5%, 100% 5%, 80% 95%, 0% 95%);
 }
 
-.pricesDiv{
-  margin-left: 15%;
-  color: white;
-}
-.offers{
-  font-size: clamp(30px, 2vw, 60px);
-  margin-top: 10%;
-  
+.firstPhotos h1{
+  font-size: clamp(11px, 2vw, 60px);
+  margin-bottom: 12px;
+  text-align: left;
 }
 
-.p-offers{
-  font-size: clamp(15px, 2vw, 40px);
-  margin-top: 1%;
-  max-width: 60%;
+.firstPhotos p{
+  font-size: clamp(7px, 2vw, 40px);
+  max-width: 35%;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.imgText{
+  background-color: rgba(0, 0, 0, 0.7);
+  clip-path: none;
+  color: white;
+  position: absolute;
+  clip-path: polygon(0% 0%, 50% 0%, 40% 100%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 10% 0 15%;
+  box-sizing: border-box;
+  z-index: 2;
+
+}
+
+.djPhotos{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  /*lewa gora, prawy gora, prawy dol, lewy dol*/
 }
 
 .priceBtn{
@@ -59,8 +79,8 @@ body{
   border-radius: 15px;
   color: white;
   font-family: "Josefin Sans";
-  padding: clamp(10px, 2vw, 30px);
-  font-size: clamp(11px, 2vw, 35px);
+  padding: clamp(1px, 2vw, 30px);
+  font-size: clamp(4px, 2vw, 35px);
   cursor: pointer;
   z-index: 1;
 }
@@ -80,4 +100,38 @@ body{
 
 .priceBtn:hover::before{
   transform: translateX(0);
+}
+
+.text-grid{
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.abme{
+  color: white;
+  
+}
+
+.abme h1{
+  font-size: clamp(11px, 2vw, 60px);
+  margin-left: 20%;
+}
+
+.abme p{
+  font-size: clamp(7px, 2vw, 40px);
+  max-width: 80%;
+  margin-left: 20%;
+}
+
+.profpic{
+  text-align: center;
+  margin-top: -2.5%;
+}
+
+.profpic img{
+  text-align: center;
+  width: 50%;
+  border-radius: 15px;
 }
