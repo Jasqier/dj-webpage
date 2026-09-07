@@ -2,6 +2,9 @@ import DJ1 from "./assets/dj1.jpg"
 import ProfPic from "./assets/profpic.png"
 import Spotify from "./Spotify";
 import { Link } from "react-router-dom";
+import photo1 from "./assets/insta1.png"
+import photo2 from "./assets/insta2.png"
+import photo3 from "./assets/insta3.png"
 
 function Body(){
     return(
@@ -41,6 +44,33 @@ function Body(){
             <div className="Spotify">
                 <h1>Check out my latest song!</h1>    
                 <Spotify/>
+            </div>
+
+
+            <div className="Instagram">
+                <h1>Check out my Instagram as well!</h1>
+                <div className="phone">
+                    <div className="phone1">
+                        <div className="notch"/>
+                        <div className="scroll">
+                            <div className="photos">
+                                <div className="photo">
+                                    <p>Instagram</p>
+                                    <img src={photo1} alt="Photo1" />
+                                </div>
+                                <div className="photo">
+                                    <p>Instagram</p>
+                                    <img src={photo2} alt="Photo2" />
+                                </div>
+                                <div className="photo">
+                                    <p>Instagram</p>
+                                    <img src={photo3} alt="Photo3" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="bar"/>
+                    </div>
+                </div>
             </div>
             
         </div>
