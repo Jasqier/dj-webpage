@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 import photo1 from "./assets/insta1.png"
 import photo2 from "./assets/insta2.png"
 import photo3 from "./assets/insta3.png"
+import InstagramLogo from "./assets/InstagramLogo.png"
+import Heart from "./assets/heart.png"
+import Comment from "./assets/comment.png"
+import Send from "./assets/send.png"
+import Save from "./assets/save.png"
 
 function Body(){
     return(
@@ -54,17 +59,56 @@ function Body(){
                         <div className="notch"/>
                         <div className="scroll">
                             <div className="photos">
+
                                 <div className="photo">
-                                    <p>Instagram</p>
-                                    <img src={photo1} alt="Photo1" />
+                                    <div className="oneLine">
+                                        <img className="instagramlogo" src={InstagramLogo} alt="InstagramLogo" />
+                                        <p>Instagram</p>
+                                    </div>
+                                    <img className="instagramPhoto" src={photo1} alt="Photo1" />
+                                    <div className="twoLine">
+                                        <div className="threeIcons">
+                                            <img src={Heart} alt="Like" />
+                                            <img src={Comment} alt="Comment" />
+                                            <img src={Send} alt="Send" />
+                                            <img src={Save} alt="Save" className="save"/>
+                                        </div>
+                                        <p className="p-likes">Likes: 158k</p>
+                                    </div>
                                 </div>
+
                                 <div className="photo">
-                                    <p>Instagram</p>
-                                    <img src={photo2} alt="Photo2" />
+                                    <div className="oneLine">
+                                        <img className="instagramlogo" src={InstagramLogo} alt="InstagramLogo" />
+                                        <p>Instagram</p>
+                                    </div>
+                                    <img className="instagramPhoto" src={photo2} alt="Photo2" />
+                                    <div className="twoLine">
+                                        <div className="threeIcons">
+                                            <img src={Heart} alt="Like" />
+                                            <img src={Comment} alt="Comment" />
+                                            <img src={Send} alt="Send" />
+                                            <img src={Save} alt="Save" className="save"/>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
+                                
                                 <div className="photo">
-                                    <p>Instagram</p>
-                                    <img src={photo3} alt="Photo3" />
+                                    <div className="oneLine">
+                                        <img className="instagramlogo" src={InstagramLogo} alt="InstagramLogo" />
+                                        <p>Instagram</p>
+                                    </div>
+                                    <img className="instagramPhoto" src={photo3} alt="Photo3" />
+                                    <div className="twoLine">
+                                        <div className="threeIcons">
+                                            <img src={Heart} alt="Like" />
+                                            <img src={Comment} alt="Comment" />
+                                            <img src={Send} alt="Send" />
+                                            <img src={Save} alt="Save" className="save"/>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>

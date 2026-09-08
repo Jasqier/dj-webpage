@@ -215,18 +215,70 @@ body{
   margin-top: 150px;
   align-items: center;
   gap: 300px;
+  margin-bottom: -300px;
 }
 
-.photo p{
-  font-family: Arial, Helvetica, sans-serif;
-  position: relative;
-  margin-bottom: -280px;
-  margin-left: -200px;
-}
-
-.photo img{
+.instagramPhoto{
   width: 80%;
   height: auto;
   display: block;
   object-fit: cover;
+}
+.oneLine{
+  margin-bottom: -290px;
+  margin-left: 50px;
+  gap: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.oneLine p{
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.instagramlogo{
+  width: 10%;
+  height: auto;
+}
+
+.twoLine{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+.threeIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: -290px;
+  margin-left: 50px;
+  gap: 8px;
+}
+
+.twoLine img{
+  width: 7%;
+  height: auto;
+}
+
+.save{
+  margin-left: 237px;
+}
+
+.p-likes{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: -300px;
+  margin-bottom: -500px;
+}
+
+.item{
+  color: white;
 }
