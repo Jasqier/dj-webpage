@@ -282,3 +282,89 @@ body{
 .item{
   color: white;
 }
+
+.tablediv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.tablediv table{
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tablediv th {
+  padding: 18px 24px;
+  color: #888;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.tablediv th:first-child,
+.tablediv td:first-child {
+  text-align: left;
+}
+
+.tablediv th:last-child,
+.tablediv td:last-child {
+  text-align: right;
+}
+
+.tablediv td{
+  padding: 20px 24px;
+  color: #e0e0e0;
+  font-size: 1.3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: background 0.2s ease;
+}
+
+
+.copyright{
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  padding: 200px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.logos-h{
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.logos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.473);
+  border-radius: 30px;
+}
+
+
+.logos img{
+  margin-top: 5px;
+  width: 70px;          
+  height: 70px;
+  margin-bottom: 5px;
+}

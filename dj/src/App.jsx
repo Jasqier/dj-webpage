@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Body from "./Body";
 import Prices from "./Prices";
+import Bottom from "./Bottom";
 import { Route, Routes } from "react-router-dom"
 
 function App(){
@@ -13,6 +14,7 @@ function App(){
           <Route path="/prices" element={<Prices/>}/>
         </Routes>
       </main>
+      <Bottom/>
     </div>
 
   );
