@@ -90,7 +90,7 @@ function Body(){
                                             <img src={Send} alt="Send" />
                                             <img src={Save} alt="Save" className="save"/>
                                         </div>
-                                        
+                                        <p className="p-likes">Likes: 109k</p>
                                     </div>
                                 </div>
                                 
@@ -107,7 +107,7 @@ function Body(){
                                             <img src={Send} alt="Send" />
                                             <img src={Save} alt="Save" className="save"/>
                                         </div>
-                                        
+                                        <p className="p-likes">Likes: 124k</p>
                                     </div>
                                 </div>
                             </div>
